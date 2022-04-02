@@ -31,7 +31,6 @@ public class MessageController {
 
     @RequestMapping(path = "/letter/list", method = RequestMethod.GET)
     public String getLetters(Model model, Page page){
-        Integer.parseInt("abc");
         User user = hostHolder.getUser();
 
         page.setLimit(5);
